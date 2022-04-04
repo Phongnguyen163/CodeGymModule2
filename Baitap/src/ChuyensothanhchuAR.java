@@ -21,6 +21,9 @@ public class ChuyensothanhchuAR {
             if (num%10 == 0) {
                 chuoi = arr[num/10] + " mươi ";
             }
+            else if (num%10 == 1) {
+                chuoi = arr[num/10] + " mươi mốt";
+            }
             else if (num%10 == 5) {
                 chuoi = arr[num/10] + " mươi lăm";
             }
