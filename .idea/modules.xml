@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Baitap/Baitap.iml" filepath="$PROJECT_DIR$/Baitap/Baitap.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodeGymModule2.iml" filepath="$PROJECT_DIR$/CodeGymModule2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kiemtra/Kiemtra.iml" filepath="$PROJECT_DIR$/Kiemtra/Kiemtra.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thuchanh/Thuchanh.iml" filepath="$PROJECT_DIR$/Thuchanh/Thuchanh.iml" />
     </modules>
   </component>
