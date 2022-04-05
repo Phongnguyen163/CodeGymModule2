@@ -7,13 +7,17 @@ public class Timmaxtrongmatran {
                 {10,11,12}
         };
         double Max = array[0][0];
-        int a, b;
+        int a = 0;
+        int b = 0;
         for (int i= 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 if (array[i][j] > Max) {
                     Max = array[i][j];
+                    a = i+1;
+                    b = j+1;
                 }
             }
         }
+        System.out.println("Phan tu lon nhat trong mang la: " + Max + " o hang: "+ a + " cot: "+ b);
     }
 }
