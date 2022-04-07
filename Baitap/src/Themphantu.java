@@ -9,7 +9,8 @@ public class Themphantu {
         do {
             System.out.print("Nhap so luong phan tu mang: ");
             size = sc.nextInt();
-        } while (size <= 0 );
+        }
+        while (size <= 0 );
         arr = new int[size];
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Nhap phan tu " + (i + 1) + ": ");

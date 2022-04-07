@@ -5,7 +5,7 @@ public class Main {
         StopWatch stopWatch = new StopWatch();
         stopWatch.getStartTime();
 
-        int[] array = new int[10000];
+        int[] array = new int[100000];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.floor(Math.random());
         }

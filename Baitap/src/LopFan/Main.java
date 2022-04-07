@@ -17,7 +17,10 @@ public class Main {
         fan2.setRadius(5);
         fan2.turnOff();
 
-        System.out.println("fan1: "+ fan1.toString());
-        System.out.println("fan2: "+ fan2.toString());
+        String f1 = fan1.toString();
+        String f2 = fan2.toString();
+
+        System.out.println("fan1: "+ f1);
+        System.out.println("fan2: "+ f2);
     }
 }
