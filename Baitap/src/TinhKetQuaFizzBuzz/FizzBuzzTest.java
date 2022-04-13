@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class FizzBuzzTest {
 
     @Test
-        //input 9 = Fizz, nine = 9, 73 = Fizz;
     void fizzBuzzCheckFizz() {
         String expected = "Fizz";
         String number = FizzBuzz.fizzBuzzCheck(9);
@@ -23,7 +22,6 @@ class FizzBuzzTest {
     }
 
     @Test
-        //input 20 = Buzz, twenty = 20, buzz = 15;
     void fizzBuzzCheckBuzz() {
         String expected = "Buzz";
         String number = FizzBuzz.fizzBuzzCheck(20);
@@ -39,7 +37,6 @@ class FizzBuzzTest {
     }
 
     @Test
-        //input 15 = FizzBuzz, 45 = forty five, 15 = buzz;
     void fizzBuzzCheckFizzBuzz() {
         String expected = "FizzBuzz";
         String number = FizzBuzz.fizzBuzzCheck(15);
@@ -55,7 +52,6 @@ class FizzBuzzTest {
     }
 
     @Test
-        //input 17 = 17, 80 = eighty, 19 = 19;
     void fizzBuzzCheckNotModulus() {
         String expected = "17";
         String number = FizzBuzz.fizzBuzzCheck(17);
@@ -71,7 +67,6 @@ class FizzBuzzTest {
     }
 
     @Test
-        //input -17 = -17, 101 = Does not exceed 100, 49 = 49
     void fizzBuzzCheckNegative() {
         String expected = "-17";
         String number = FizzBuzz.fizzBuzzCheck(-17);
