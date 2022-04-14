@@ -1,7 +1,13 @@
 package DemoQuanLyXe;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
         QuanLyXeMay qlxm = new QuanLyXeMay();
         XeMay xm1 = new XeMay("Honda", "Đen", "adv", 120, 300);
         XeMay xm2 = new XeMay("Honda", "Đỏ", "asv", 180, 300);
@@ -11,14 +17,69 @@ public class Test {
         qlxm.them(xm2);
         qlxm.them(xm3);
         qlxm.print();
-        qlxm.sapXep();
-        System.out.println(qlxm.timKiem("asv"));
 
-        XeMay xm4 = new XeMay("Honda", "Xanh", "awv", 150, 500);
-        qlxm.sua("awv", xm4);
-        qlxm.print();
-        qlxm.xoa("awv");
-        qlxm.print();
+        do{
+            System.out.println("Lua chon phuong thuc: ");
+            System.out.println("1.Them xe");
+            System.out.println("2.Sua xe");
+            System.out.println("3.Xoa xe");
+            System.out.println("4.Tim xe");
+            System.out.println("0.Thoat");
+            System.out.println("--------------------");
+            choice = sc.nextInt();
+            if(choice == 1) {
+                System.out.println("Nhap thong tin xe muon them");
+                System.out.print("Hang: ");
+                String hang = sc.next();
+                System.out.print("Ten: ");
+                String ten = sc.next();
+                System.out.print("Mau: ");
+                String mau = sc.next();
+                System.out.print("Gia: ");
+                int gia = sc.nextInt();
+                System.out.print("Dung tich: ");
+                int dungTich = sc.nextInt();
+                XeMay xm4 = new XeMay();
+                xm4.setHang(hang);
+                xm4.setTen(ten);
+                xm4.setMau(mau);
+                xm4.setGia(gia);
+                xm4.setDungTich(dungTich);
+                qlxm.them(xm4);
+                qlxm.print();
+            }
+            else if (choice == 2) {
+                System.out.println("Nhap thong tin xe muon sua");
+                System.out.print("Hang: ");
+                String hang = sc.next();
+                System.out.print("Ten: ");
+                String ten = sc.next();
+                System.out.print("Mau: ");
+                String mau = sc.next();
+                System.out.print("Gia: ");
+                int gia = sc.nextInt();
+                System.out.print("Dung tich: ");
+                int dungTich = sc.nextInt();
+                XeMay xm4 = new XeMay();
+                xm4.setHang(hang);
+                xm4.setTen(ten);
+                xm4.setMau(mau);
+                xm4.setGia(gia);
+                xm4.setDungTich(dungTich);
+                qlxm.sua(ten, xm4);
+                qlxm.print();
+            }
+            else if (choice == 3) {
+                System.out.println("Chuc nang dang trong qua trinh hoan thien nham dam baor trai nghiem tot nhat cho khach hang" +
+                        "nen tam thoi chua su dung duoc");
+            }
+            else if (choice == 4) {
+                System.out.print("Nhap ten xe muon tim: ");
+                String ten = sc.next();
+                System.out.println(qlxm.timKiem(ten));
+            }
+        }
+        while (choice > 0 );
 
         QuanLyOto qlot = new QuanLyOto();
         Oto ot1 = new Oto("Honda", "Đen", "adv", 620, 800);
@@ -34,8 +95,6 @@ public class Test {
 
         Oto ot4 = new Oto("Lamborghini", "Xanh", "awv", 2500, 1000);
         qlot.sua("awv", ot4);
-        qlot.print();
-        qlot.xoa("Honda");
         qlot.print();
     }
 }

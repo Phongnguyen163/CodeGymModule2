@@ -3,7 +3,7 @@ package DemoQuanLyXe;
 import java.util.Arrays;
 
 public class QuanLyXeMay implements QuanLy<XeMay> {
-    private XeMay[] xeMays = new XeMay[3];
+    private XeMay[] xeMays = new XeMay[15];
     private int size = 0;
     @Override
     public void them(XeMay xeMay) {
