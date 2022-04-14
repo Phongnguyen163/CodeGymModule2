@@ -18,12 +18,18 @@ public class QuanLyOto implements QuanLy<Oto> {
 
     @Override
     public void xoa(String name) {
-        otos[timKiem(name)] = null;
+        for (int i = timKiem(name); i < otos.length -1; i++) {
+            otos[i] = otos[i + 1];
+        }
+        otos[otos.length - 1] = null;
+        Oto[] otos2 = new Oto[otos.length - 1];
+        System.arraycopy(otos, 0, otos2, 0, otos.length-1);
+        otos = otos2;
     }
 
     @Override
     public int timKiem(String name) {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < otos.length; i++) {
             if (name.equals(otos[i].getTen())){
                 return i;
             }
@@ -38,7 +44,7 @@ public class QuanLyOto implements QuanLy<Oto> {
 
     @Override
     public void print() {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < otos.length; i++) {
             System.out.println(otos[i]);
         }
         System.out.println("---------------------");
