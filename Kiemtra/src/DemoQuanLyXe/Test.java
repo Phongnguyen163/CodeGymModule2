@@ -70,8 +70,10 @@ public class Test {
                 qlxm.print();
             }
             else if (choice == 3) {
-                System.out.println("Chuc nang dang trong qua trinh hoan thien nham dam baor trai nghiem tot nhat cho khach hang" +
-                        "nen tam thoi chua su dung duoc");
+                System.out.print("Nhap ten xe muon xoa: ");
+                String ten = sc.next();
+                qlxm.xoa(ten);
+                qlxm.print();
             }
             else if (choice == 4) {
                 System.out.print("Nhap ten xe muon tim: ");
@@ -95,6 +97,8 @@ public class Test {
 
         Oto ot4 = new Oto("Lamborghini", "Xanh", "awv", 2500, 1000);
         qlot.sua("awv", ot4);
+        qlot.print();
+        qlot.xoa("awv");
         qlot.print();
     }
 }
