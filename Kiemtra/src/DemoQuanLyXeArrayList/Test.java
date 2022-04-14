@@ -113,7 +113,7 @@ public class Test {
                         qlpt.print();
                     }
                     if (choice == 2) {
-                        System.out.println("Nhap thong tin xe muon them");
+                        System.out.println("Nhap thong tin xe muon sua");
                         System.out.print("Hang: ");
                         String hang = sc.next();
                         System.out.print("Ten: ");
