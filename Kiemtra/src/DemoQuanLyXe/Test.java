@@ -39,6 +39,8 @@ public class Test {
                 int gia = sc.nextInt();
                 System.out.print("Dung tich: ");
                 int dungTich = sc.nextInt();
+                System.out.println("Nhap vi tri muon them: ");
+                int viTri = sc.nextInt();
                 XeMay xm4 = new XeMay();
                 xm4.setHang(hang);
                 xm4.setTen(ten);
