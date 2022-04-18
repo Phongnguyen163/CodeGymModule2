@@ -41,7 +41,7 @@ public class Town {
             }
         }
     }
-    public void sortByMember(){
+    public void sortByMembers(){
         Collections.sort(list2);
     }
 }
