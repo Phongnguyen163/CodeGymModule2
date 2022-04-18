@@ -1,6 +1,7 @@
 package DemoQuanLyXeArrayList;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class QuanLyPhuongTien implements QuanLy<PhuongTien> {
@@ -33,7 +34,6 @@ public class QuanLyPhuongTien implements QuanLy<PhuongTien> {
 
     @Override
     public void sapXep() {
-
     }
 
     @Override
