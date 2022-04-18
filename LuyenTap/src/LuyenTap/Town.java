@@ -1,6 +1,7 @@
 package LuyenTap;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Town {
     ArrayList<Family> list2 = new ArrayList<>();
@@ -27,8 +28,20 @@ public class Town {
     }
 
     public void display() {
-        for (int i = 0; i < list2.size(); i++) {
-            list2.get(i).display();
+        for (Family family : list2) {
+            family.display();
         }
+    }
+
+    public void displayMaxMembers() {
+        int max = list2.get(0).getMembers();
+        for (Family family: list2) {
+            if(family.getMembers() > max) {
+                max = family.getMembers();
+            }
+        }
+    }
+    public void sortByMember(){
+        Collections.sort(list2);
     }
 }

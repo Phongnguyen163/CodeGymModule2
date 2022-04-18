@@ -2,7 +2,7 @@ package LuyenTap;
 
 import java.util.ArrayList;
 
-public class Family {
+public class Family implements Comparable<Family>{
     ArrayList<Person> list = new ArrayList<>();
     private String address;
     private int members = 0;
@@ -33,6 +33,15 @@ public class Family {
         list.set(findByID(id), person);
     }
 
+    public int findByName(String name) {
+        for (int i = 0; i < list.size(); i++) {
+            if(list.get(i).getName().equals(name)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int findByID(int id) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getId()== id) {
@@ -54,5 +63,20 @@ public class Family {
         else {
             System.out.println("Chua co thanh vien nao");
         }
+    }
+
+    public void displayMinAge() {
+        int min = list.get(0).getAge();
+        for (Person person : list) {
+            if (person.getAge() < min) {
+                min = person.getAge();
+            }
+        }
+        System.out.println(min);
+    }
+
+    @Override
+    public int compareTo(Family o) {
+        return this.getMembers() - o.getMembers();
     }
 }
