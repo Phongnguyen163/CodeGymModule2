@@ -81,7 +81,7 @@ public class Test {
         System.out.println("---------------------------");
 
         town.delete(2);
-        town.sortByMember();
+        town.sortByMembers();
         town.display();
     }
 }
