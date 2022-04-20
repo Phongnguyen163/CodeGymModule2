@@ -12,11 +12,13 @@ public class demTu {
         String str = scanner.nextLine();
         Map<String, Integer> map = new TreeMap<>();
         String temp = "";
+        int sum = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) != ' ') {
                 temp += str.charAt(i) + "";
             }
             if (str.charAt(i) == ' ' || i == str.length() - 1) {
+                sum++;
                 if (map.containsKey(temp)) {
                     int count = map.get(temp) + 1;
                     map.put(temp, count);
@@ -31,10 +33,6 @@ public class demTu {
             System.out.println(key + " " + map.get(key));
         }
         System.out.print("Cac phan tu ap dao: ");
-        int sum = 0;
-        for (String key : keySet) {
-            sum += map.get(key);
-        }
         for (String key : keySet) {
             if (map.get(key) > sum/2) {
                 System.out.println(" "+key);
