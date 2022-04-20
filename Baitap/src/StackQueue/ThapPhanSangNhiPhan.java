@@ -15,7 +15,7 @@ public class ThapPhanSangNhiPhan {
             num /= 2;
         }
         System.out.print("\nGia tri nhi phan la : ");
-        while (!(stack.isEmpty())) {
+        while (!stack.isEmpty()) {
             System.out.print(stack.pop());
         }
 

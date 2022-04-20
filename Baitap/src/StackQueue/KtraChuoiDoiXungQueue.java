@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class KtraChuoiDoiXungQueue {
     public static void main(String[] args) {
-        String str = "addas";
+        String str = "adda";
         StringBuilder result = new StringBuilder();
         Queue<Character> queue = new LinkedList<>();
 
@@ -17,7 +17,7 @@ public class KtraChuoiDoiXungQueue {
             result.append(queue.remove());
         }
 
-        if (str.contentEquals(result)){
+        if (str.equals(result.toString())){
             System.out.println("This is a palindrome");
         } else {
             System.out.println("This is not a palindrome");

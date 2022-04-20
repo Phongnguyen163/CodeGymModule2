@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/Kiemtra/Kiemtra.iml" filepath="$PROJECT_DIR$/Kiemtra/Kiemtra.iml" />
       <module fileurl="file://$PROJECT_DIR$/LuyenTap/LuyenTap.iml" filepath="$PROJECT_DIR$/LuyenTap/LuyenTap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thuchanh/Thuchanh.iml" filepath="$PROJECT_DIR$/Thuchanh/Thuchanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaCollectionsFramework/javaCollectionsFramework.iml" filepath="$PROJECT_DIR$/javaCollectionsFramework/javaCollectionsFramework.iml" />
     </modules>
   </component>
 </project>

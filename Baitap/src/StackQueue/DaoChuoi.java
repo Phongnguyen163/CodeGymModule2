@@ -13,6 +13,7 @@ public class DaoChuoi {
         for (String s : arr) {
             stack.push(s);
         }
+        System.out.print("Chuoi dao nguoc: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(stack.pop());
         }
