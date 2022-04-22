@@ -2,7 +2,6 @@ package QuanLyTinh;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class QuanLyTinh implements QuanLy<Tinh>{
     ArrayList<Tinh> tinhList = new ArrayList();
