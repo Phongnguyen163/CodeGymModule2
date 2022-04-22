@@ -1,13 +1,14 @@
 package QuanLyTinh;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class QuanLyNguoi implements QuanLy<Nguoi>{
-    List<Nguoi> nguoiList = new ArrayList();
-    List<QuanLyTinh> quanLiTinhs = new ArrayList();
+    ArrayList<Nguoi> nguoiList;
+    ArrayList<Tinh> quanLiTinhs;
 
     public QuanLyNguoi() {
+        quanLiTinhs = new ArrayList();
+        nguoiList = new ArrayList();
     }
 
     public void add(Nguoi nguoi) {
@@ -15,15 +16,15 @@ public class QuanLyNguoi implements QuanLy<Nguoi>{
     }
 
     public void display() {
-        for(int i = 0; i < this.nguoiList.size(); ++i) {
-            System.out.println(this.nguoiList.get(i));
+        for (Object o : this.nguoiList) {
+            System.out.println(o);
         }
 
     }
 
     public int search(String name) {
         for(int i = 0; i < this.nguoiList.size(); ++i) {
-            if (((Nguoi)this.nguoiList.get(i)).getTen().equals(name)) {
+            if ((this.nguoiList.get(i)).getTen().equals(name)) {
                 return i;
             }
         }
