@@ -9,7 +9,7 @@ public class QuanLy {
         listDB.add(danhBa);
     }
 
-    public void sua(String sdt, DanhBa danhBa ) {
+    public void sua(String sdt, DanhBa danhBa) {
         listDB.set(timBangSdt(sdt), danhBa);
     }
 
@@ -19,7 +19,7 @@ public class QuanLy {
 
     public void timGanDung(String string) {
         for (DanhBa danhBa : listDB) {
-            if (danhBa.getSoDienThoai().contains(string)){
+            if (danhBa.getSoDienThoai().contains(string)) {
                 System.out.println(danhBa);
             }
         }
@@ -35,8 +35,12 @@ public class QuanLy {
     }
 
     public void hienThi() {
-        for (DanhBa a : listDB) {
-            System.out.println(a);
+        if (listDB.isEmpty()) {
+            System.out.println("Ko co danh ba nao");
+        } else {
+            for (DanhBa a : listDB) {
+                System.out.println(a);
+            }
         }
     }
 
