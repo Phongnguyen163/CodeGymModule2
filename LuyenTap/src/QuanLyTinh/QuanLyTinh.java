@@ -109,6 +109,5 @@ public class QuanLyTinh implements QuanLy<Tinh>{
                 tinh.setDanSo(tinh.getDanSo() + 1L);
             }
         }
-
     }
 }

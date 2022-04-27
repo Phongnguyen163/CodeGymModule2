@@ -1,0 +1,5 @@
+Nghiem cua phuong trinh: -2.0
+Tong cac phan tu: 311
+Tich cac phan tu: 0
+Phan tu lon nhat: 136
+Phan tu nho nhat: 0
